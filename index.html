@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Editor Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Imsha Nadeem</h1>
+    <ul>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="logo-container">
+    <video autoplay muted loop class="logo-video">
+      <source src="logo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="vidtext">
+    <h1>WorkFlow</h1>
+    <h2>Social Media Management</h2>
+    <p>From eye-catching edits to scroll-stopping designs —  <br> we transform your content into social media gold.</p>
+    <a href="#portfolio" class="cta-button">View Portfolio</a>
+  </div>
+  <video autoplay muted loop id="heroVideo">
+    <source src="videoport.mp4" type="video/mp4">
+  </video>
+</section>
+
+<section id="portfolio">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project zoom-in">
+      <a href="https://drive.google.com/drive/folders/14sIc62xijzG4YECz79n56DwXYdZkUSYS" target="_blank">
+        <img src="P1Vo.jpg" alt="Video editng project" >
+        <h3>Video Editing</h3></a>
+    </div>
+    <div class="project zoom-in">
+      <a href="https://mecanvasite.my.canva.site/imsha-web-development-portfolio" target="_blank">
+      <img src="web design.jpg" alt="Project 2">
+      <h3>Web Deign</h3></a>
+    </div>
+    <div class="project zoom-in">
+      <a href="https://drive.google.com/drive/folders/1obk7gxP_A0_vcRvMTGaOel_jH9TeDqkv?usp=drive_link" target="_blank">
+      <img src="graphic.jpg" alt="Project 3">
+      <h3>Graphic Design</h3> </a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hello, I'm Imsha Nadeem, a versatile digital creator specializing in graphic design, <br> 
+    video editing, social media management, and front-end web development. <br>
+    With hands-on experience from freelancing on Fiverr and Upwork, <br>
+    I've collaborated on a range of projects from branding to website design, <br>
+    aiming to deliver impactful visuals and seamless user experiences. <br>
+    My goal is to transform ideas into engaging content that captivates <br>
+    and connects with audiences across platforms.
+</p>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="service-container"> <!-- Added container for services -->
+    <div class="service">
+      <a href="https://mecanvasite.my.canva.site/social-media-manager-portfolio-website" target="_blank">
+      <h3>Social Media Management</h3>
+      <p>I help brands grow their online presence through strategic social media management,
+         delivering content that engages and drives results.</p> </a>
+    </div>
+    <div class="service">
+      <h3>Graphic Design</h3>
+      <p>I create stunning web designs, logos, posters, and social media graphics to help brands make a memorable visual statement and stand out in their industry with impactful and engaging designs. </p>
+    </div>
+    <div class="service">
+      <h3>Video Editing</h3>
+      <p>I help brands elevate their visual identity through expert video editing, creating content that captivates audiences and delivers impactful results.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form" action="/contact" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <button type="submit">Send Message</button>
+    <div id="form-response"></div>
+  </form>
+</section>
+
+<footer>
+  <p>© 2024 Imsha Nadeem. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
